@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: rabbit-demo
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+
+logging:
+  level:
+    org.springframework.amqp.core.Queue: DEBUG
+    org.springframework.amqp.rabbit.core.RabbitTemplate: DEBUG
