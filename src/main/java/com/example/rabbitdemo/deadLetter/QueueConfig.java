@@ -38,8 +38,8 @@ public class QueueConfig {
 
 
     @Bean
-    public Binding bindingMainQueue(Queue queueOne, DirectExchange topicExchange) {
-        return BindingBuilder.bind(queueOne).to(topicExchange).with("dead");
+    public Binding bindingDeadLetterQueue(Queue queueOne, DirectExchange directExchange) {
+        return BindingBuilder.bind(queueOne).to(directExchange).with("dead");
     }
 
 }

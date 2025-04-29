@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.example.rabbitdemo.replyTo", "com.example.rabbitdemo.config"})
+@ComponentScan(basePackages = {"com.example.rabbitdemo.directExchange", "com.example.rabbitdemo.config"})
 public class RabbitDemoApplication {
 
     public static void main(String[] args) {
